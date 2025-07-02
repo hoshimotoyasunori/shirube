@@ -8,7 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # 依存関係をインストール
-RUN npm ci --only=production
+# RUN npm ci --only=production --ignore-scripts
+RUN npm ci --ignore-scripts
 
 # ソースコードをコピー
 COPY . .
@@ -26,7 +27,7 @@ COPY --from=0 /app/dist ./dist
 COPY --from=0 /app/package*.json ./
 
 # 本番用依存関係のみをインストール
-RUN npm ci --only=production
+RUN npm ci --only=production --ignore-scripts
 
 # アプリケーションを起動
 CMD ["npm", "start"] 
