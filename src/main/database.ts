@@ -77,7 +77,7 @@ export class Database {
     return new Promise((resolve, reject) => {
       this.db.all('SELECT * FROM projects ORDER BY created_at DESC', (err, rows) => {
         if (err) reject(err);
-        else resolve(rows);
+        else resolve(rows as Project[]);
       });
     });
   }
@@ -134,7 +134,7 @@ export class Database {
 
       this.db.all(query, params, (err, rows) => {
         if (err) reject(err);
-        else resolve(rows);
+        else resolve(rows as Task[]);
       });
     });
   }
