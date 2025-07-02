@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # 開発環境
+  shirube-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
+
+  # ビルド環境
+  shirube-build:
+    build:
+      context: .
+      dockerfile: Dockerfile.build
+    volumes:
+      - ./dist:/app/dist
+    environment:
+      - NODE_ENV=production
+
+  # データベース（開発用）
+  shirube-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: shirube
+      POSTGRES_USER: shirube
+      POSTGRES_PASSWORD: shirube123
+    ports:
+      - "5432:5432"
+    volumes:
+      - shirube_data:/var/lib/postgresql/data
+
+volumes:
+  shirube_data: 
