@@ -21,6 +21,27 @@ declare global {
   }
 }
 
+defineDummyElectronAPI();
+
+function defineDummyElectronAPI() {
+  if (!window.electronAPI) {
+    window.electronAPI = {
+      getProjects: async () => [
+        { id: 1, name: "サンプルプロジェクト", description: "説明" }
+      ],
+      createProject: async (project) => project,
+      updateProject: async () => {},
+      deleteProject: async () => {},
+      getTasks: async (projectId) => [
+        { id: 1, project_id: 1, title: "サンプルタスク", description: "説明", status: "todo", priority: "medium", is_private: false }
+      ],
+      createTask: async (task) => task,
+      updateTask: async () => {},
+      deleteTask: async () => {},
+    };
+  }
+}
+
 function App() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [tasks, setTasks] = useState<Task[]>([]);
