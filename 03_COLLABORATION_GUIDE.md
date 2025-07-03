@@ -4,7 +4,7 @@
 
 ### 1. プロジェクト管理ドキュメント
 
-#### 📄 PROJECT_STATUS.md
+#### 📄 06_PROJECT_STATUS.md
 - **目的**: 現在の状況と今後の予定を管理
 - **更新頻度**: 毎日または重要な変更時
 - **内容**:
@@ -15,7 +15,7 @@
   - 既知の問題
   - 進捗状況
 
-#### 📄 DEVELOPMENT_STATUS.md
+#### 📄 07_DEVELOPMENT_STATUS.md
 - **目的**: 技術的な開発状況を記録
 - **更新頻度**: 機能実装完了時
 - **内容**:
@@ -64,7 +64,7 @@ git checkout -b feature/新機能名
 # または
 git checkout -b bugfix/修正内容
 
-# 3. PROJECT_STATUS.mdを更新
+# 3. 06_PROJECT_STATUS.mdを更新
 # - 進行中のタスクに追加
 # - 担当者を記載
 ```
@@ -72,7 +72,7 @@ git checkout -b bugfix/修正内容
 ### 2. 開発中
 - **定期的なコミット**: 小さな単位でコミット
 - **コミットメッセージ**: 規約に従って記載
-- **進捗報告**: PROJECT_STATUS.mdを更新
+- **進捗報告**: 06_PROJECT_STATUS.mdを更新
 
 ### 3. 作業完了時
 ```bash
@@ -83,7 +83,7 @@ git commit -m "feat: 新機能の実装完了"
 # 2. プルリクエストを作成
 git push origin feature/新機能名
 
-# 3. PROJECT_STATUS.mdを更新
+# 3. 06_PROJECT_STATUS.mdを更新
 # - 完了済みタスクに移動
 # - 進捗状況を更新
 ```
@@ -113,7 +113,7 @@ git push origin feature/新機能名
 4. **ログ**: エラーログを添付
 
 ### 2. スケジュールの問題
-1. **PROJECT_STATUS.mdを更新**: 遅延理由を記載
+1. **06_PROJECT_STATUS.mdを更新**: 遅延理由を記載
 2. **チームに報告**: 影響範囲を説明
 3. **対策を検討**: スケジュール調整または機能削減
 
@@ -125,8 +125,8 @@ git push origin feature/新機能名
 ## 📝 ドキュメント更新ルール
 
 ### 必須更新タイミング
-- **新機能実装完了時**: DEVELOPMENT_STATUS.md
-- **タスク完了時**: PROJECT_STATUS.md
+- **新機能実装完了時**: 07_DEVELOPMENT_STATUS.md
+- **タスク完了時**: 06_PROJECT_STATUS.md
 - **設定変更時**: 関連ドキュメント
 - **問題解決時**: 解決策を記録
 
@@ -140,11 +140,11 @@ git push origin feature/新機能名
 
 ### プロジェクト管理者
 - **責任**: 全体の進捗管理、スケジュール調整
-- **作業**: PROJECT_STATUS.mdの更新、マイルストーン管理
+- **作業**: 06_PROJECT_STATUS.mdの更新、マイルストーン管理
 
 ### 技術リーダー
 - **責任**: 技術的な決定、コードレビュー
-- **作業**: DEVELOPMENT_STATUS.mdの更新、技術的な課題解決
+- **作業**: 07_DEVELOPMENT_STATUS.mdの更新、技術的な課題解決
 
 ### 開発者
 - **責任**: 機能実装、テスト
@@ -159,10 +159,10 @@ git push origin feature/新機能名
 - **Discussions**: 一般的な議論
 
 ### ドキュメント
-- **README.md**: プロジェクト概要
-- **CONTRIBUTING.md**: 開発ガイドライン
-- **DOCKER.md**: Docker使用方法
-- **FOLDER_STRUCTURE.md**: フォルダ構成
+- **01_README.md**: プロジェクト概要
+- **04_CONTRIBUTING.md**: 開発ガイドライン
+- **05_DOCKER.md**: Docker使用方法
+- **02_FOLDER_STRUCTURE.md**: フォルダ構成
 
 ## 📞 連絡先
 

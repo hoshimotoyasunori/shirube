@@ -200,12 +200,12 @@ CREATE TABLE tasks (
 - `src/components/` - Reactコンポーネント群
 
 ### ドキュメント
-- `README.md` - プロジェクト概要・セットアップ手順
-- `PROJECT_STATUS.md` - プロジェクト状況
-- `COLLABORATION_GUIDE.md` - 共同開発ガイド
-- `FOLDER_STRUCTURE.md` - フォルダ構成説明
-- `DOCKER.md` - Docker使用ガイド
-- `DEVELOPMENT_STATUS.md` - 開発状況レポート（このファイル）
+- `01_README.md` - プロジェクト概要・セットアップ手順
+- `06_PROJECT_STATUS.md` - プロジェクト状況
+- `03_COLLABORATION_GUIDE.md` - 共同開発ガイド
+- `02_FOLDER_STRUCTURE.md` - フォルダ構成説明
+- `05_DOCKER.md` - Docker使用ガイド
+- `07_DEVELOPMENT_STATUS.md` - 開発状況レポート（このファイル）
 
 ## 開発者情報
 - **プロジェクト名**: Shirube

@@ -155,4 +155,6 @@ ports:
 environment:
   - NODE_ENV=development
   - CUSTOM_VAR=value
-``` 
+```
+
+詳細は [フォルダ構成](./02_FOLDER_STRUCTURE.md) を参照してください。 

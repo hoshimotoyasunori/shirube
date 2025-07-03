@@ -175,3 +175,5 @@ npm run dev
 **更新者**: hoshimotoyasunori 
 
 型定義は src/types/ ディレクトリ配下にまとめて記述してください。 
+
+詳細な開発状況は [07_DEVELOPMENT_STATUS.md](./07_DEVELOPMENT_STATUS.md) を参照してください。 
