@@ -11,9 +11,9 @@ Shirube/
 ├── 📁 src/                     # ソースコード
 │   ├── 📁 components/          # Reactコンポーネント
 │   ├── 📁 main/               # Electronメインプロセス
+│   ├── 📁 types/             # 型定義（index.tsなどで分割管理）
 │   ├── 📄 App.tsx             # メインアプリケーション
 │   ├── 📄 main.tsx            # Reactエントリーポイント
-│   ├── 📄 types.ts            # 型定義
 │   └── 📄 index.css           # スタイル
 ├── 📄 .dockerignore           # Docker除外ファイル
 ├── 📄 .eslintrc.js            # ESLint設定
@@ -68,7 +68,7 @@ src/
 │   └── 📄 preload.ts          # プリロードスクリプト
 ├── 📄 App.tsx                 # メインアプリケーションコンポーネント
 ├── 📄 main.tsx                # Reactアプリケーションエントリーポイント
-├── 📄 types.ts                # TypeScript型定義
+├── 📁 types/                 # 型定義（index.tsなどで分割管理）
 └── 📄 index.css               # グローバルスタイル
 ```
 
@@ -109,7 +109,7 @@ src/
 
 ### ファイル追加時のルール
 1. **コンポーネント**: `src/components/` に配置
-2. **型定義**: `src/types.ts` に追加、または専用ファイルを作成
+2. **型定義**: `src/types/` に追加、または専用ファイルを作成
 3. **ユーティリティ**: `src/utils/` を作成して配置
 4. **フック**: `src/hooks/` を作成して配置
 5. **定数**: `src/constants/` を作成して配置

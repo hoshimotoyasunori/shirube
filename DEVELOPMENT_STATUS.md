@@ -212,4 +212,6 @@ CREATE TABLE tasks (
 - **バージョン**: 1.0.0
 - **ライセンス**: MIT
 - **開発言語**: TypeScript/JavaScript
-- **プラットフォーム**: Electron (Windows, macOS, Linux) 
+- **プラットフォーム**: Electron (Windows, macOS, Linux)
+
+型定義は src/types/ ディレクトリ配下にまとめて記述してください。 

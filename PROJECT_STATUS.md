@@ -173,3 +173,5 @@ npm run dev
 
 **最終更新**: 2024-12-19  
 **更新者**: hoshimotoyasunori 
+
+型定義は src/types/ ディレクトリ配下にまとめて記述してください。 
