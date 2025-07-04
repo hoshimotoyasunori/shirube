@@ -157,4 +157,7 @@ environment:
   - CUSTOM_VAR=value
 ```
 
-詳細は [フォルダ構成](./02_FOLDER_STRUCTURE.md) を参照してください。 
+詳細は [フォルダ構成](./02_FOLDER_STRUCTURE.md) を参照してください。
+
+**最終更新**: 2025-07-03 11:56:44  
+**更新者**: hoshimotoyasunori 

@@ -207,3 +207,6 @@ npm run dev
 型定義は src/types/ ディレクトリ配下にまとめて記述してください。 
 
 詳細な貢献方法は [共同開発ガイド](./03_COLLABORATION_GUIDE.md) を参照してください。 
+
+**最終更新**: 2025-07-03 11:56:41  
+**更新者**: hoshimotoyasunori 

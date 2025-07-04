@@ -215,3 +215,26 @@ CREATE TABLE tasks (
 - **プラットフォーム**: Electron (Windows, macOS, Linux)
 
 型定義は src/types/ ディレクトリ配下にまとめて記述してください。 
+
+## 2024-06-13
+- プロジェクト作成時に複数ユーザーをメンバーとしてアサインできる機能を追加
+- Project型にmemberUserIdsを追加し、DB側でproject_membersテーブルへも自動登録されるように実装
+- 組織・ユーザー管理画面で新規作成フォームからDB登録・一覧表示が可能に
+
+## 2024-06-13（続き）
+- タスク作成時に複数ユーザーを担当者としてアサインできる機能を追加
+- Task型にassignedUserIdsを追加し、DB側でtask_assignmentsテーブルへも自動登録されるように実装 
+
+## クラウドDB・API構成への移行
+
+- 2024-xx-xx: Supabase（PostgreSQLベース）をクラウドDBとして採用。
+- ElectronアプリはAPI経由でSupabaseと通信し、データ管理・認証を行う構成に移行。
+- システム構成図・DB構成図を参照。
+
+### システム構成図
+
+![システム構成図](./docs/system_architecture.png)
+
+### データベース構成図
+
+![DB構成図](./docs/db_schema.png) 
